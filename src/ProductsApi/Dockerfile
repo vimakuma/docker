@@ -9,6 +9,8 @@ EXPOSE 5000
 ENV ASPNETCORE_URLS http://+:5000
 
 COPY project.json ./
+RUN PWD
+RUN ls -lrt
 RUN ["dotnet", "restore"]
 
 COPY . /app
