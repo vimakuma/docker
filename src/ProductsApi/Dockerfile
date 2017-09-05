@@ -12,6 +12,7 @@ COPY project.json ./
 RUN pwd
 RUN dir
 RUN ls -lrt
+RUN ["dotnet", "migrate"]
 RUN ["dotnet", "restore"]
 
 COPY . /app
