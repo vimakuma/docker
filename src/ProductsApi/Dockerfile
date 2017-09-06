@@ -1,5 +1,5 @@
 FROM microsoft/dotnet:latest
-RUN apt-get update && apt-get install -y dotnet-sdk-2.0.0
+
 
 MAINTAINER Julien Corioland, Microsoft (@jcorioland)
 
